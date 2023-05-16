@@ -20,6 +20,15 @@ const UserStyle = styled.div`
     padding-right: 0rem;
     margin-right: 2rem;
   }
+
+  // Media query
+  @media (max-width: 960px) {
+    width: 50rem;
+  }
+
+  @media (max-width: 900px) {
+    width: 46rem;
+  }
 `;
 
 export const UserDetailsStyle = styled.div`

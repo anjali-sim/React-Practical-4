@@ -33,9 +33,11 @@ const NavbarStyle = styled.div`
   // Media query
   @media (max-width: 960px) {
     width: 40rem;
+
     & .nameStyle {
       padding-right: 19.3rem;
     }
+
     & .statusStyle {
       padding-right: 0.4rem;
     }
@@ -45,9 +47,11 @@ const NavbarStyle = styled.div`
     & .nameStyle {
       padding-right: 18rem;
     }
+
     & .statusStyle {
       padding-right: 0rem;
     }
+
     & .accessStyle {
       margin-left: 8.5rem;
     }

@@ -17,7 +17,23 @@ const UserDetailCardStyle = styled.div`
   align-items: center;
   justify-content: center;
   
- 
+  // Media query
+  @media (max-width: 1550px) {
+    right: 6rem;
+  }
+
+  @media (max-width: 1440px) {
+    right: 4rem;
+  }
+
+  @media (max-width: 1360px) {
+    right: 2rem;
+  }
+
+  @media (max-width: 900px) {
+    right: 2rem;
+  }
+
 `;
 
 export default UserDetailCardStyle;

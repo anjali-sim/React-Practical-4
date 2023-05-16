@@ -6,7 +6,7 @@ import UserStyle, {
   UserDetailsStyle,
 } from "../../styled/UserCard";
 import { ProfilePictureStyle } from "../../styled/ProfilePicture";
-import UserDetailsCard from "../UserDetailCard/UserDetailsCard";
+import UserDetailsCard from "../UserCard/UserDetailsCard";
 
 function UserCard(props) {
   const { email, id, profile, firstName, lastName } = props;

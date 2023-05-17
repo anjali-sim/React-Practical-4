@@ -1,9 +1,10 @@
 import React from "react";
-import { ProfilePictureCardStyle } from "@styled/ProfilePictureCard";
-import UserDetailCardStyle from "@styled/UserDetailCard";
-import CountDetails from "@CountDetails";
-import PlanDetails from "@PlanDetails";
-import UserInformation from "@UserInformation";
+import PropTypes from "prop-types";
+import { ProfilePictureCardStyle } from "@src/styled/ProfilePictureCard";
+import UserDetailCardStyle from "@UserCard/index";
+import CountDetails from "@UserCard/index";
+import PlanDetails from "@UserCard/index";
+import UserInformation from "@UserCard/index";
 
 function UserDetailsCard(props) {
   const { profile, firstName, lastName, email } = props;
@@ -29,5 +30,12 @@ function UserDetailsCard(props) {
     </UserDetailCardStyle>
   );
 }
+
+UserDetailsCard.propTypes = {
+  profile: PropTypes.string.isRequired,
+  firstName: PropTypes.string.isRequired,
+  lastName: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired,
+};
 
 export default UserDetailsCard;

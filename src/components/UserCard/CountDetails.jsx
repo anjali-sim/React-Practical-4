@@ -1,5 +1,6 @@
 import React from "react";
-import CountDetailsStyle from "@styled/CountDetails";
+import PropTypes from "prop-types";
+import CountDetailsStyle from "@UserCard/index";
 
 function CountDetails(props) {
   const { currentPlanCount, totalPlanCount } = props;
@@ -17,5 +18,10 @@ function CountDetails(props) {
     </CountDetailsStyle>
   );
 }
+
+CountDetails.propTypes = {
+  currentPlanCount: PropTypes.number.isRequired,
+  totalPlanCount: PropTypes.number.isRequired,
+};
 
 export default CountDetails;

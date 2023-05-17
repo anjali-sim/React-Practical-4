@@ -1,5 +1,6 @@
 import React from "react";
-import UserInformationStyle from "@styled/UserInformation";
+import PropTypes from 'prop-types';
+import UserInformationStyle from "@UserCard/index";
 
 function UserInformation(props) {
   const { firstName, lastName, email } = props;
@@ -14,6 +15,12 @@ function UserInformation(props) {
       <button>Active User</button>
     </UserInformationStyle>
   );
+}
+
+UserInformation.propTypes = {
+  firstName: PropTypes.string.isRequired,
+  lastName: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired,
 }
 
 export default UserInformation;

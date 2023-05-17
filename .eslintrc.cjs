@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require("path");
 
 module.exports = {
   env: { browser: true, es2020: true },
@@ -14,16 +14,9 @@ module.exports = {
     "import/resolver": {
       alias: {
         map: [
-          ["@styled", path.resolve(__dirname, "./src/styled")][
-            ("@constants", path.resolve(__dirname, "./src/constants"))
-          ][
-            ("@UserCard", path.resolve(__dirname, "./src/components/UserList"))
-          ][("@Navbar", path.resolve(__dirname, "./src/components/Navbar"))]
-          ["@container", path.resolve(__dirname, "./src/container")]
-          ["@components", path.resolve(__dirname, "./src/components")]
-          ["@CountDetails", path.resolve(__dirname, "./src/components/UserCard/CountDetails")]
-          ["@PlanDetails", path.resolve(__dirname, "./src/components/UserCard/PlanDetails")]
-      ["@UserInformation", path.resolve(__dirname, "./src/components/UserCard/UserInformation")]
+          ["@src", path.resolve(__dirname, "./src")],
+          [("@UserCard", path.resolve(__dirname, "./src/components/UserList"))],
+          ["@UserList", path.resolve(__dirname, "./src/components/UserList")],
         ],
       },
     },

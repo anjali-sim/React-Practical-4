@@ -6,15 +6,8 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   resolve: {
     alias: {
-      "@styled": path.resolve(__dirname, "./src/styled"),
-      "@constants": path.resolve(__dirname, "./src/constants"),
+      "@src": path.resolve(__dirname, "./src"),
       "@UserCard": path.resolve(__dirname, "./src/components/UserCard"),
-      "@Navbar": path.resolve(__dirname, "./src/components/Navbar"),
-      "@container": path.resolve(__dirname, "./src/container"),
-      "@components": path.resolve(__dirname, "./src/components"),
-      "@CountDetails": path.resolve(__dirname, "./src/components/UserCard/CountDetails"),
-      "@PlanDetails": path.resolve(__dirname, "./src/components/UserCard/PlanDetails"),
-      "@UserInformation": path.resolve(__dirname, "./src/components/UserCard/UserInformation"),
       "@UserList": path.resolve(__dirname, "./src/components/UserList"),
     },
   },

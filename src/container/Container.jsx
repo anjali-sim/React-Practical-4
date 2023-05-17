@@ -1,5 +1,5 @@
 import React from 'react'
-import ContainerStyle from '../styled/Container'
+import ContainerStyle from '@styled/Container'
 
 function Container(props) {
   return (

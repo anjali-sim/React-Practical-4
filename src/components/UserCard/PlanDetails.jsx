@@ -1,5 +1,5 @@
 import React from "react";
-import PlanDetailsStyle from "../../styled/PlanDetails";
+import PlanDetailsStyle from "@styled/PlanDetails";
 
 function PlanDetails(props) {
   return (

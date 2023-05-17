@@ -1,5 +1,5 @@
 import React from "react";
-import UserInformationStyle from "../../styled/UserInformation";
+import UserInformationStyle from "@styled/UserInformation";
 
 function UserInformation(props) {
   const { firstName, lastName, email } = props;

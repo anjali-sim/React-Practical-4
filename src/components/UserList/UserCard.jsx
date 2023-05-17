@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Lock, Trash2 } from "react-feather";
-import DropDownStyle from "../../styled/DropDown";
+import DropDownStyle from "@styled/DropDown";
 import UserStyle, {
   NameWrapper,
   UserDetailsStyle,
-} from "../../styled/UserCard";
-import { ProfilePictureStyle } from "../../styled/ProfilePicture";
-import UserDetailsCard from "../UserCard/UserDetailsCard";
+} from "@styled/UserCard";
+import { ProfilePictureStyle } from "@styled/ProfilePicture";
+import UserDetailsCard from "@UserCard/UserDetailsCard";
 
 function UserCard(props) {
   const { email, id, profile, firstName, lastName } = props;

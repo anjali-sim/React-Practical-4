@@ -1,5 +1,5 @@
 import React from "react";
-import CountDetailsStyle from "../../styled/CountDetails";
+import CountDetailsStyle from "@styled/CountDetails";
 
 function CountDetails(props) {
   const { currentPlanCount, totalPlanCount } = props;

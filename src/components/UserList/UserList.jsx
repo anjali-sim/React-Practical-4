@@ -1,8 +1,8 @@
 import React from "react";
-import UserListStyle from "../../styled/UserList";
-import UserCard from "./UserCard";
-import USERLISTDATA from "../../constants/data";
-import Navbar from "../Navbar/Navbar";
+import UserListStyle from "@styled/UserList";
+import UserCard from "@UserList/UserCard";
+import USERLISTDATA from "@constants/data";
+import Navbar from "@Navbar/Navbar";
 
 function UserList() {
   return (

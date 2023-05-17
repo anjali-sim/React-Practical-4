@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import PropTypes from 'prop-types'
 import { Lock, Trash2 } from "react-feather";
-import DropDownStyle from "@styled/DropDown";
+import DropDownStyle from "@src/styled/DropDown";
 import UserStyle, {
   NameWrapper,
   UserDetailsStyle,
-} from "@styled/UserCard";
-import { ProfilePictureStyle } from "@styled/ProfilePicture";
+} from "@src/styled/UserCard";
+import { ProfilePictureStyle } from "@src/styled/ProfilePicture";
 import UserDetailsCard from "@UserCard/UserDetailsCard";
 
 function UserCard(props) {
@@ -73,6 +74,14 @@ function UserCard(props) {
       )}
     </UserStyle>
   );
+}
+
+UserCard.propTypes = {
+  id: PropTypes.number.isRequired,
+  firstName: PropTypes.string.isRequired,
+  lastName: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired,
+  profile: PropTypes.string.isRequired,
 }
 
 export default UserCard;

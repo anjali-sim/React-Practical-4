@@ -1,5 +1,6 @@
 import React from "react";
-import PlanDetailsStyle from "@styled/PlanDetails";
+import PropTypes from "prop-types";
+import PlanDetailsStyle from "@UserCard/index";
 
 function PlanDetails(props) {
   return (
@@ -11,5 +12,9 @@ function PlanDetails(props) {
     </PlanDetailsStyle>
   );
 }
+
+PlanDetails.propTypes = {
+  width: PropTypes.number.isRequired,
+};
 
 export default PlanDetails;

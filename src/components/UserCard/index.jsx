@@ -1,11 +1,4 @@
-import CountDetailsStyle from "@src/styled/CountDetails";
-import PlanDetailsStyle from "@src/styled/PlanDetails";
-import UserInformation from "./UserInformation";
-import UserDetailsStyleCard from "@src/styled/UserDetailCard";
+import ClicksReviewed from "@src/components/UserCard/CountDetailsCard/ClicksReviewed";
+import MonthlyClicks from "@src/components/UserCard/CountDetailsCard/MonthlyClicks";
 
-export default {
-    CountDetailsStyle,
-    PlanDetailsStyle,
-    UserInformation,
-    UserDetailsStyleCard
-  };
+export { ClicksReviewed, MonthlyClicks };

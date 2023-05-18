@@ -1,10 +1,10 @@
 import React from "react";
-import UserListStyle from "@src/styled/UserList";
-import UserCard from "@src/components/UserList/UserCard";
-import USERLISTDATA from "@src/constants/data";
-import {Navbar} from "@src/components/Navbar/index";
+import UserListStyle from "@src/styled/UserList.style";
+import UserCard from "@UserList/UserCardTable";
+import { USERLISTDATA } from "@src/constants/dummyData";
+import { Navbar } from "@src/components/Navbar/index";
 
-function UserList() {
+const UserList = () => {
   return (
     <UserListStyle>
       <Navbar />

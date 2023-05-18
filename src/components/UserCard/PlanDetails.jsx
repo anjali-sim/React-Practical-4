@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import PlanDetailsStyle from "@UserCard/index";
+import PlanDetailsStyle from "@src/styled/PlanDetails.style";
 
-function PlanDetails(props) {
+const PlanDetails = (props) => {
   return (
     <PlanDetailsStyle width={props.width}>
       <label className="planUse">Plan Uses</label>

@@ -1,8 +1,8 @@
 import React from "react";
-import PropTypes from 'prop-types';
-import UserInformationStyle from "@UserCard/index";
+import PropTypes from "prop-types";
+import UserInformationStyle from "@src/styled/UserInformation.style";
 
-function UserInformation(props) {
+const UserInformation = (props) => {
   const { firstName, lastName, email } = props;
   return (
     <UserInformationStyle>
@@ -21,6 +21,6 @@ UserInformation.propTypes = {
   firstName: PropTypes.string.isRequired,
   lastName: PropTypes.string.isRequired,
   email: PropTypes.string.isRequired,
-}
+};
 
 export default UserInformation;

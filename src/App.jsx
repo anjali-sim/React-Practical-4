@@ -1,4 +1,4 @@
-import AppStyle from "@src/styled/App";
+import AppStyle from "@src/styled/App.style";
 import Container from "@src/container/Container";
 import UserList from "@src/components/UserList/UserList";
 

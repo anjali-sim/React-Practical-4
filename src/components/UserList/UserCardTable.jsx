@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 import { Lock, Trash2 } from "react-feather";
-import DropDownStyle from "@src/styled/DropDown";
+import DropDown from "@UserList";
 import UserStyle, {
   NameWrapper,
   UserDetailsStyle,
-} from "@src/styled/UserCard";
-import { ProfilePictureStyle } from "@src/styled/ProfilePicture";
+} from "@src/styled/UserCard.style";
+import { ProfilePictureStyle } from "@src/styled/ProfilePicture.style";
 import UserDetailsCard from "@UserCard/UserDetailsCard";
 
-function UserCard(props) {
+const UserCardTable = (props) => {
   const { email, id, profile, firstName, lastName } = props;
   const [isHovered, setIsHovered] = useState(false);
 
@@ -31,15 +31,7 @@ function UserCard(props) {
 
   const restRows = (
     <>
-      <DropDownStyle>
-        <option defaultChecked>Active</option>
-        <option>Inactive</option>
-      </DropDownStyle>
-      <DropDownStyle>
-        <option defaultChecked>Manager</option>
-        <option>Read</option>
-        <option>Employee</option>
-      </DropDownStyle>
+      <DropDown />
       <Trash2 color="#999999" />
     </>
   );
@@ -76,12 +68,12 @@ function UserCard(props) {
   );
 }
 
-UserCard.propTypes = {
+UserCardTable.propTypes = {
   id: PropTypes.number.isRequired,
   firstName: PropTypes.string.isRequired,
   lastName: PropTypes.string.isRequired,
   email: PropTypes.string.isRequired,
   profile: PropTypes.string.isRequired,
-}
+};
 
-export default UserCard;
+export default UserCardTable;

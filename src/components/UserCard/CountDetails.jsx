@@ -1,27 +1,16 @@
 import React from "react";
-import PropTypes from "prop-types";
-import CountDetailsStyle from "@UserCard/index";
+import CountDetailsStyle from "@src/styled/CountDetails.style";
+import { ClicksReviewed } from "@UserCard";
+import { MonthlyClicks } from "@UserCard";
 
-function CountDetails(props) {
-  const { currentPlanCount, totalPlanCount } = props;
+const CountDetails = ({ currentPlanCount, totalPlanCount }) => {
   return (
     <CountDetailsStyle>
-      <div className="reviewed">
-        <div className="currentPlanCountStyle">{currentPlanCount}</div>
-        <div className="clicksReviewed">clicks reviewed</div>
-      </div>
+      <ClicksReviewed currentPlanCount={currentPlanCount} />
       <div className="verticalLineStyle"></div>
-      <div className="monthsClicks">
-        <div className="totalPlanCountStyle">{totalPlanCount}</div>
-        <div className="monthlyClicks">Monthly clicks</div>
-      </div>
+      <MonthlyClicks totalPlanCount={totalPlanCount} />
     </CountDetailsStyle>
   );
 }
-
-CountDetails.propTypes = {
-  currentPlanCount: PropTypes.number.isRequired,
-  totalPlanCount: PropTypes.number.isRequired,
-};
 
 export default CountDetails;

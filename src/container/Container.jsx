@@ -1,7 +1,7 @@
 import React from 'react'
-import ContainerStyle from '@src/styled/Container'
+import ContainerStyle from '@src/styled/Container.style'
 
-function Container(props) {
+const Container = (props) => {
   return (
     <ContainerStyle>{props.children}</ContainerStyle>
   )

@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { ProfilePictureCardStyle } from "@src/styled/ProfilePictureCard";
-import UserDetailCardStyle from "@UserCard/index";
-import CountDetails from "@UserCard/index";
-import PlanDetails from "@UserCard/index";
-import UserInformation from "@UserCard/index";
+import { ProfilePictureCardStyle } from "@src/styled/ProfilePictureCard.style";
+import UserDetailCardStyle from "@src/styled/UserDetailCard.style";
+import CountDetails from "./CountDetails";
+import PlanDetails from "./PlanDetails";
+import UserInformation from "./UserInformation";
 
-function UserDetailsCard(props) {
+const UserDetailsCard = (props) => {
   const { profile, firstName, lastName, email } = props;
   const totalPlanCount = 5000;
   // to generate random plan count for the users

@@ -1,7 +1,7 @@
 import React from "react";
-import {NavbarStyle} from "@src/components/Navbar/index";
+import NavbarStyle from "@src/styled/Navbar.style";
 
-function Navbar() {
+const Navbar = () => {
   return (
     <NavbarStyle>
       <div className="nameStyle">Name</div>

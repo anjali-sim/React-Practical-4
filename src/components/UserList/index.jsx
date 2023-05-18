@@ -1,5 +1,3 @@
-import UserListStyle from "@src/styled/UserList";
-import UserCard from "@src/components/UserList/UserCard";
-import Navbar from "@src/components/Navbar/index";
+import DropDown from "./DropDown";
 
-export default {UserListStyle, UserCard, Navbar}
+export default DropDown;
